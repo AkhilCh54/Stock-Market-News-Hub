@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- Heroes -->
+    <div class="container col-xxl-8 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="./static/assets/stock_market.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Stock Market</h1>
+        <p class="lead">The stock market allows businesses to raise capital from investors, and it provides investors with an opportunity to share in the profits of those businesses. The stock market is a complex and ever-changing system, but it remains an important part of the global economy.</p>
+      </div>
+    </div>
+    </div>
+
+<!-- Stock News Cards -->
+    <div class="container col-xxl-8 px-4 py-5">
+    {% for post in all_posts: %}
+    <div class="content">
+        <div class="border-bottom pb-3 mb-3">
+            <h2>{{ post.title }}</h2>
+            <p>{{ post.subtitle }}</p>
+<!--            <a href="#">Read</a>-->
+        </div>
+
+    </div>
+    {% endfor %}
+    </div>
+
+{% endblock %}    
