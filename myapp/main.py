@@ -2,9 +2,9 @@ from datetime import datetime
 from flask import Flask, render_template, request, url_for, redirect
 import smtplib
 
-from_address = "m16631906@gmail.com"
-password = "ruhjncujreknuxbu"
-to_addr = "chakhilsatyasai225@gmail.com"
+from_address = "" #from addr
+password = "" #from addr gmail password
+to_addr = "" #gmail addr of the to_addr
 #==========================================================================================================================
 # Automating the Date Variable
 
@@ -40,7 +40,7 @@ parameters_news = {
     'from':DATE,
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API Key,
 }
 news_response = requests.get(url='https://newsapi.org/v2/everything',params=parameters_news)
 
@@ -93,7 +93,7 @@ tesla_parameters_news = {
     'from':DATE,
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API key,
 }
 tesla_news_response = requests.get(url='https://newsapi.org/v2/everything',params=tesla_parameters_news)
 
@@ -125,7 +125,7 @@ nokia_parameters_news = {
     'from':DATE,
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API key,
 }
 nokia_news_response = requests.get(url='https://newsapi.org/v2/everything',params=nokia_parameters_news)
 
@@ -156,7 +156,7 @@ google_parameters_news = {
     'from':DATE,
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API key,
 }
 google_news_response = requests.get(url='https://newsapi.org/v2/everything',params=google_parameters_news)
 
@@ -187,7 +187,7 @@ intel_parameters_news = {
     'from':DATE,
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API key,
 }
 intel_news_response = requests.get(url='https://newsapi.org/v2/everything',params=intel_parameters_news)
 
@@ -218,7 +218,7 @@ amazon_parameters_news = {
     'from':DATE,
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API key,
 }
 amazon_news_response = requests.get(url='https://newsapi.org/v2/everything',params=amazon_parameters_news)
 
