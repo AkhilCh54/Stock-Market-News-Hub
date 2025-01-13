@@ -3,7 +3,7 @@ import requests
 COMPANY_NAME: str = "stock market"
 
 ## STEP 2: Use https://newsapi.org
-# Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
+# Instead of printing ("Get News"), actually get the first 10 news pieces for the COMPANY_NAME.
 
 parameters_news = {
     'q': COMPANY_NAME,
