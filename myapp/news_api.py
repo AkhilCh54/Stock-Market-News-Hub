@@ -10,7 +10,7 @@ parameters_news = {
     'from':'2023-07-01',
     'sortBy':'publishedAt',
     'language': 'en',
-    'apiKey':'003dad8d7bff4974806223db9230b906',
+    'apiKey':'' #API key,
 }
 news_response = requests.get(url='https://newsapi.org/v2/everything',params=parameters_news)
 # data = news_response.json()
